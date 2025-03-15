@@ -1,5 +1,5 @@
 import Map from './Map';
-import '../styles/Contacto.css';
+import '../styles/contacto.css';
 
 const Contacto = () => {
   return (

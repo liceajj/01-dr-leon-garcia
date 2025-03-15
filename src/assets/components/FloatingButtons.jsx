@@ -10,21 +10,18 @@ function FloatingButtons() {
     const blendyInstance = useRef(null);
 
     useEffect(() => {
-        // Inicializa Blendy solo una vez al montar el componente
         blendyInstance.current = createBlendy({ animation: 'dynamic' });
         
-        // Espera a que Blendy esté listo antes de permitir animaciones
         setTimeout(() => {
             setIsBlendyReady(true);
-        }, 300); // Espera 300ms para asegurar carga completa
+        }, 300); 
     }, []);
 
     const openModal = () => {
-        if (!isBlendyReady) return; // No permitir si Blendy aún no está listo
+        if (!isBlendyReady) return; 
 
         setIsModalOpen(true);
 
-        // Usa requestAnimationFrame para optimizar el inicio de la animación
         requestAnimationFrame(() => {
             blendyInstance.current?.toggle('emergencyModal');
         });

@@ -1,6 +1,6 @@
 
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
-import '../styles/Appointment.css';
+import '../styles/appointment.css';
 import backgroundImage from '../../../public/images/post2.jpg'; 
 function Appointment() {
   const phoneNumber = 'tel:+525535176177'; 

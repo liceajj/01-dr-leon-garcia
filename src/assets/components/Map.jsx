@@ -1,5 +1,5 @@
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import '../styles/Map.css';
+import '../styles/map.css';
 /* global process */
 
 

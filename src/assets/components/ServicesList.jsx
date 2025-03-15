@@ -1,4 +1,4 @@
-import '../styles/ServicesList.css';
+import '../styles/servicesList.css';
 import { Link } from 'react-router-dom';
 
 const ServicesList = () => {

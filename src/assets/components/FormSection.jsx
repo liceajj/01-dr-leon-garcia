@@ -1,4 +1,4 @@
-import '../styles/FormSection.css';
+import '../styles/formSection.css';
 import { useState } from 'react';
 
 const FormSection = () => {

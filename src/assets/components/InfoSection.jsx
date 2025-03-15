@@ -1,4 +1,4 @@
-import '../styles/InfoSection.css';
+import '../styles/infoSection.css';
 import { FaStethoscope, FaHeartbeat, FaNotesMedical, FaUserMd } from 'react-icons/fa';
 
 function InfoSection() {

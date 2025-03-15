@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaStar, FaGraduationCap, FaBriefcaseMedical, FaCertificate, FaChalkboardTeacher } from 'react-icons/fa';
 import { SiGooglescholar } from "react-icons/si";
-import '../styles/DoctorCard.css';
+import '../styles/doctorCard.css';
 import doctorPhoto from '../../../public/images/doc1.jpg'; 
 
 const DoctorCard = () => {
