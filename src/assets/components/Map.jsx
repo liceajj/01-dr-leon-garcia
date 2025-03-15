@@ -1,5 +1,7 @@
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import '../styles/Map.css';
+/* global process */
+
 
 const containerStyle = {
   width: '100%',
@@ -28,7 +30,7 @@ function Map() {
         <h2>CARCIS MEDICAL</h2>
         <button onClick={handleDirectionsClick}>Cómo llegar</button>
       </div>
-      <LoadScript googleMapsApiKey="AIzaSyCl2nXnn69ps2rrobEiri0fCeCuU6j4Flc">
+      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
