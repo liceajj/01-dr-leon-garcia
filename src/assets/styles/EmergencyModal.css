@@ -1,0 +1,88 @@
+/* src/styles/EmergencyModal.css */
+
+.Modal {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .Overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal__title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .modal__close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 15px;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00508C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #003f6b;
+  }
+  
+  @media (max-width: 768px) {
+    .Modal {
+      max-width: 90%;  /* Hace que el modal sea más pequeño en pantallas pequeñas */
+      max-height: 70vh; /* Reduce la altura para que no quede oculto */
+      overflow-y: auto; /* Agrega scroll interno si el contenido es muy grande */
+      padding: 15px; /* Reduce el padding en móviles */
+    }
+  }
+  
+  .Overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000; /* Asegura que el modal esté sobre el header */
+  }
+  

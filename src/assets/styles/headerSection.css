@@ -1,0 +1,28 @@
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%; /* Asegura que el fondo cubra todo el contenedor */
+  padding: 3rem; /* Ajusta el padding */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2.5rem; /* Ajusta el tamaño de la fuente */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    padding: 1rem; /* Ajusta el padding para pantallas más pequeñas */
+  }
+}

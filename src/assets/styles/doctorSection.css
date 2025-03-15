@@ -1,0 +1,87 @@
+
+.doctor-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0091ff, #001f3f); 
+ /* background: linear-gradient(to right, #0091ff, #001f3f); */
+  color: #FFFFFF; /* Texto en blanco */
+  height: 90vh; /* Ocupa el alto completo de la pantalla */
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.doctor-info {
+  flex-basis: 60%;
+  padding: 10px;
+}
+
+.doctor-photo {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+  background: rgba(0, 0, 50, 0.5);
+}
+
+.doctor-photo img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Mantiene la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+  /*filter: blur(2px); /* Aplica un pequeño desenfoque a la imagen */
+  margin: 0; /* Elimina los márgenes para que ocupe todo el espacio disponible */
+  
+}
+
+.doctor-info h2,
+.doctor-info h3,
+.doctor-info p {
+  color: #FFFFFF;
+  margin: 0 0 40px 0;
+}
+
+.doctor-info h2 {
+  font-size: 56px;
+}
+
+.doctor-info h3 {
+  font-size: 30px;
+}
+
+.doctor-info p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.primary-button {
+  background-color: #00264D;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 11px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.primary-button:hover {
+  background-color: #003f6b;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .doctor-section {
+    flex-direction: column;
+    height: auto; /* Ajusta la altura para contenido dinámico en móviles */
+  }
+
+  .doctor-info,
+  .doctor-photo {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  .doctor-photo {
+    margin-top: 20px;
+  }
+}

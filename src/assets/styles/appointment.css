@@ -1,0 +1,107 @@
+/* src/styles/appointment.css */
+/* src/styles/appointment.css */
+
+.appointment {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Aumentar la altura de la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 100%; /* Asegura que el componente ocupe el ancho completo */
+  margin: 0 auto; /* Centrar el componente horizontalmente */
+  padding: 20px; /* Añadir padding para evitar que el contenido se salga */
+  box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 50, 0.5); /* Capa de color azul degradado */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.appointment__content {
+  position: relative;
+  z-index: 1;
+  max-width: 90%; /* Ajustar el ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+}
+
+.appointment__content h2 {
+  font-size: 56px; /* Aumentar el tamaño de la fuente */
+  margin-bottom: 1rem;
+  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+}
+
+.appointment__content p {
+  font-size: 20px; /* Aumentar el tamaño de la fuente */
+  margin-bottom: 2rem;
+  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+}
+
+.appointment__buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los botones se envuelvan */
+}
+
+.appointment__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 20px; /* Aumentar el tamaño de la fuente */
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+  min-width: 150px; /* Establece un ancho mínimo para los botones */
+  flex: 1; /* Permite que los botones se ajusten */
+  max-width: 200px; /* Establece un ancho máximo para los botones */
+}
+
+.phone-button {
+  background-color: #3498db;
+}
+
+.phone-button:hover {
+  background-color: #2980b9;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
+
+.button-icon {
+  margin-right: 10px;
+  font-size: 1.5rem; /* Aumentar el tamaño del icono */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .appointment__buttons {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    gap: 10px; /* Ajusta el espacio entre los botones en pantallas pequeñas */
+  }
+
+  .appointment__button {
+    max-width: none; /* Elimina el ancho máximo en pantallas pequeñas */
+    width: calc(100% - 20px); /* Ajusta el ancho para evitar desbordamientos */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+  }
+}

@@ -1,0 +1,100 @@
+/* src/styles/traumatologia.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la pantalla */
+}
+
+.traumatologia-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.traumatologia-container {
+  flex: 1; /* Asegura que el contenido principal ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content-trauma {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 100%; /* Asegura que el contenido no se desborde */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+}
+
+.left-section-trauma {
+  flex: 0 0 70%;
+  max-width: 70%; /* Asegura que la sección izquierda no se desborde */
+  font-size: 20px;
+
+}
+
+.right-section-trauma {
+  flex: 0 0 30%;
+  max-width: 30%; /* Asegura que la sección derecha no se desborde */
+  padding-left: 2rem;
+}
+
+/* .info-section h3, .info-section p estilos ya están en InfoSection.css, por lo que pueden ser eliminados de aquí */
+
+.about-us, .services-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 100%; /* Asegura que no se desborden */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  font-size: 20px;
+}
+
+.services-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.services-list li {
+  margin-bottom: 10px; /* Margin entre los elementos de la lista */
+  font-size: 20px;
+}
+
+/* .form-section, .form-section h2, .form-group, .form-group label, .form-group input, .form-group textarea, .form-group button, .form-group button svg estilos ya están en FormSection.css, por lo que pueden ser eliminados de aquí */
+
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .content-trauma {
+    flex-direction: column;
+    padding: 1rem; /* Ajustar el padding en pantallas pequeñas */
+  }
+
+  .right-section-trauma {
+    padding-left: 0;
+  }
+
+  .left-section-trauma, .right-section-trauma {
+    flex: 1;
+    max-width: 100%; /* Asegura que no se desborden en pantallas pequeñas */
+  }
+}
+
+.traumatologia-container img {
+  max-width: 75%; /* Reduce el tamaño de las imágenes al 75% */
+  height: auto;
+}

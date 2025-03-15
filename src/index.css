@@ -1,0 +1,20 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* O la fuente que prefieras */
+  
+  scrollbar-color: blue lightblue;
+  scrollbar-width: thin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+.main-content {
+  margin-top: 100px; /* Ajusta este valor según las alturas reales */
+}
+

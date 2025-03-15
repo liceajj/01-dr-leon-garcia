@@ -1,0 +1,189 @@
+/* src/styles/Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00264D;
+  padding: 0px 0px;
+  padding-left: 0px; 
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.logo {
+  background-color: #00264D;
+  order: 2; /* Cambia el orden del logo para que aparezca a la derecha */
+  flex: 1;
+  padding-left: 225px;
+}
+
+.logo img {
+  max-width: 400px; /* Hace que la imagen ocupe el ancho completo del contenedor */
+  height: 70px; /* Ajusta la altura del logo para mantener la proporción */
+  padding-right: 200px;
+}
+
+.navigation {
+  order: 1; /* Cambia el orden de la navegación para que aparezca a la izquierda */
+  flex: 3; /* Ajusta el espacio que ocupa la navegación */
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos del menú a la izquierda */
+}
+
+.navigation li {
+  margin-left: 40px;
+  position: relative;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out; /* Añade transición para efecto hover */
+}
+
+.navigation li:hover {
+  color: #00508C;
+}
+
+.navigation a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation .dropdown span {
+  cursor: pointer; /* Cursor de puntero para parecer un enlace */
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation .dropdown span:hover {
+  color: #00508C;
+}
+
+/* Ocultar el submenú por defecto */
+.navigation .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00508C;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  list-style: none;
+  padding: 10px 0; /* Añade padding para espacio interno */
+  margin: 0;
+  z-index: 1000;
+  border-radius: 8px; /* Añade bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade sombra para profundidad */
+  transition: all 0.3s ease-in-out; /* Añade transición para suavidad */
+}
+
+/* Mostrar el submenú al pasar el cursor */
+.navigation .dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1; /* Asegura que sea completamente visible */
+  transform: translateY(0); /* Elimina el desplazamiento */
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content a {
+  padding: 10px 20px; /* Añade padding para un mejor espaciamiento */
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out; /* Transición suave en el hover */
+}
+
+.dropdown-content a:hover {
+  background-color: #003f6b;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Muestra el botón de menú en dispositivos móviles */
+    position: absolute; /* Asegura que esté posicionado correctamente */
+    right: 20px; /* Ajusta la posición a la derecha */
+    top: 10px; /* Ajusta la posición vertical */
+  }
+
+  .logo {
+    order: 0;
+    padding-left: 20px;
+  }
+
+  .logo img {
+    max-width: 200px;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta para que no se superponga con el logo */
+    left: 0;
+    width: 100%;
+    background-color: #00264D;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navigation li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Ajuste para los submenús desplegables */
+  .dropdown-content {
+    position: static;
+    display: none;
+    width: 100%;
+    background-color: #004080;
+    border-radius: 0; /* Elimina los bordes redondeados en móvil */
+    box-shadow: none; /* Elimina la sombra en móvil */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}

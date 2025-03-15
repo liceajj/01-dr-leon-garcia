@@ -1,0 +1,78 @@
+/* src/styles/footer.css */
+
+.footer {
+  background-color: #00264D;
+  color: #FFFFFF;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Incluir padding en el ancho total */
+  max-width: 100%; /* Asegura que el footer no se desborde */
+}
+
+.footer__location,
+.footer__contact,
+.footer__social {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+  font-size: 20px;
+  overflow: hidden; /* Evitar el desbordamiento */
+  text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto se desborda */
+  word-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+}
+
+.footer h3 {
+  border-bottom: 2px solid #00508C;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-icons a {
+  color: #FFFFFF;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.footer__social-icons a:hover {
+  color: #00508C;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__location,
+  .footer__contact,
+  .footer__social {
+    min-width: 100%; /* Asegura que cada sección ocupe el ancho completo */
+    margin: 10px 0;
+    max-width: 95%; /* Ajustar el ancho máximo para evitar desbordamientos */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__location,
+  .footer__contact,
+  .footer__social {
+    max-width: 90%; /* Ajustar el ancho máximo para evitar desbordamientos */
+  }
+}

@@ -1,0 +1,105 @@
+/* src/styles/gallery.css */
+
+.photo-gallery {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.photo-gallery h2 {
+  font-size: 56px;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Ajusta las columnas */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 320px;  /* Tamaño ajustado */
+  height: 220px; /* Tamaño ajustado */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.text {
+  font-size: 30px;
+  white-space: normal; /* Asegura que el texto no se corte */
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta las columnas para pantallas medianas */
+  }
+
+  .gallery-item {
+    width: 280px;  /* Ajusta el tamaño para pantallas medianas */
+    height: 200px; /* Mantiene proporción */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Permite mayor tamaño en pantallas pequeñas */
+  }
+
+  .gallery-item {
+    width: 250px;  /* Se aumenta el tamaño en pantallas pequeñas */
+    height: 180px; /* Mantiene proporción */
+  }
+
+  .text {
+    font-size: 25px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta columnas en móviles */
+  }
+
+  .gallery-item {
+    width: 220px;  /* Se ajusta el tamaño en móviles */
+    height: 160px; /* Mantiene proporción */
+  }
+
+  .text {
+    font-size: 22px; /* Ajusta el tamaño del texto en móviles */
+  }
+}

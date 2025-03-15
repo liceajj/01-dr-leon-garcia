@@ -1,0 +1,96 @@
+/* Contenedor principal tipo card */
+.info-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+/* Título con línea sutil */
+.info-section2 h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center; /* Centra el título */
+  border-bottom: 1px solid rgba(0, 80, 140, 0.5); /* Línea sutil */
+  padding-bottom: 5px;
+}
+
+/* Contenedor para imagen y texto */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Imagen de la card */
+.info-section2 img {
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Texto descriptivo */
+.info-section2 p {
+  margin: 0;
+  width: 50%;
+}
+
+/* Botón "Agendar Cita" */
+.btn-agendar {
+  background-color: #00508C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-agendar:hover {
+  background-color: #003f6b;
+}
+
+/* Media Queries para Responsividad */
+
+/* Tablets y dispositivos pequeños */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .info-section2 img {
+    width: 80%; /* Ajusta el ancho de la imagen */
+    margin-right: 0;
+    margin-bottom: 20px; /* Espacio inferior para separación */
+  }
+
+  .info-section2 p {
+    width: 80%; /* Ajusta el ancho del párrafo */
+  }
+}
+
+/* Móviles y dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .info-section2 h3 {
+    font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+  }
+
+  .info-section2 img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+  }
+
+  .info-section2 p {
+    width: 100%; /* Párrafo ocupa todo el ancho */
+  }
+}

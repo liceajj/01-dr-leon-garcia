@@ -1,0 +1,124 @@
+/* src/styles/infoService.css */
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.info-image3 {
+  flex: 0 0 40%; /* Aumenta el tamaño del contenedor de la imagen */
+  margin-right: 20px;
+}
+
+.info-image3 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-right: 15px;
+  transform: scale(0.9);
+}
+
+.info-box:last-child {
+  margin-right: 0;
+}
+
+.info-box h3 {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 24px;
+}
+
+.info-box h3 .icon-animation {
+  margin-right: 10px;
+  width: 150px; /* Ajustamos el tamaño para hacerlo tres veces más grande */
+  height: 150px;
+  animation: icon-animate 2s infinite;
+}
+
+.info-box p {
+  margin: 10px;
+  font-size: 20px;
+  color: #333333;
+}
+
+@keyframes icon-animate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+/* Responsividad para pantallas medianas y pequeñas */
+@media (max-width: 1024px) {
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-image3 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    transform: scale(1);
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Responsividad para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .info-box h3 {
+    font-size: 20px;
+  }
+
+  .info-box h3 .icon-animation {
+    width: 120px; /* Ajustamos el tamaño para pantallas muy pequeñas */
+    height: 120px;
+  }
+
+  .info-box p {
+    font-size: 18px;
+  }
+}

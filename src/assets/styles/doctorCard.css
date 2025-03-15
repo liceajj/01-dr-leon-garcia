@@ -1,0 +1,164 @@
+/* src/styles/DoctorCard.css */
+
+.doctor-card {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto; /* Centramos horizontalmente con margen automático */
+    width: 80%; /* Reduce el ancho de la card */
+    max-width: 800px; /* Ancho máximo de la card */
+  }
+  
+  .doctor-left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .doctor-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .rating {
+    margin-top: 10px;
+  }
+  
+  .rating p {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #333333;
+  }
+  .rating .star {
+    font-size: 30px;
+  }
+  
+  .doctor-right {
+    flex: 1.5; /* Ajusta el tamaño de la parte derecha */
+    padding: 20px;
+  }
+  
+  .doctor-right h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: #333333;
+  }
+  
+  .doctor-right h3 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    color: #333333;
+  }
+  
+  .doctor-right p {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .menu {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+  }
+  
+  .menu-button {
+    width: 90%;
+    background-color: #00264D; /* Color del botón */
+    border: none;
+    padding: 17px 20px;
+    margin-bottom: 10px; /* Espacio entre elementos */
+    font-size: 20px; /* Reduce el tamaño de la fuente */
+    color: #FFFFFF; /* Color del texto */
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 1s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .menu-button:hover {
+    background-color: #FFFFFF; /* Fondo blanco en hover */
+    color: #00264D; /* Texto del color del botón en hover */
+    border-left: 2px;
+  }
+  
+  .menu-button.selected {
+    border-left: 5px solid #00264D; /* Borde izquierdo al seleccionar */
+  }
+  
+  .menu-content {
+    margin-top: 5px;
+    padding-left: 20px;
+    animation: slide-down 1s ease-out;
+  }
+  
+  .arrow {
+    transition: transform 0.5s ease; /* Transición más lenta para el icono */
+  }
+  
+  @keyframes slide-down {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+    to {
+      max-height: 1000px; /* Ajusta según sea necesario */
+      opacity: 1;
+    }
+  }
+  /* CSS para Doctor Card */
+
+/* ... estilos existentes ... */
+
+/* Responsividad para Doctor Card */
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor-left {
+    order: 2; /* La imagen se mostrará después del nombre */
+    padding: 10px 0; /* Reduce el padding para dispositivos móviles */
+  }
+
+  .doctor-right {
+    order: 1; /* El nombre se mostrará primero */
+    padding: 10px;
+  }
+
+  .doctor-right h2 {
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+  }
+
+  .menu {
+    order: 3; /* Los botones se mostrarán al final */
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+  }
+
+  .menu-button {
+    width: 100%; /* Botones ocupan todo el ancho */
+    font-size: 14px;
+    padding: 12px 10px; /* Ajusta padding para dispositivos móviles */
+  }
+
+  .menu-button.selected {
+    border-left: none; /* Quita el borde izquierdo en dispositivos móviles */
+    border-top: 3px solid #00264D; /* Borde superior al seleccionar */
+  }
+
+  .menu-content {
+    padding-left: 0; /* Alinea contenido a la izquierda */
+  }
+}
+
+  
