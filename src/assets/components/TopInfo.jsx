@@ -1,4 +1,4 @@
-import '../styles/TopInfo.css';
+import '../styles/topInfo.css';
 
 const TopInfo = () => {
   return (
