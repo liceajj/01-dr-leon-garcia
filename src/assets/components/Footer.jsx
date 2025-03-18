@@ -15,7 +15,7 @@ function Footer() {
       <div className="footer__contact">
         <h3>Contacto</h3>
         <p>Tel: (+52)5535176177</p>
-        <p>Email: drrodrigolgarcia@gmail.com</p>
+        <p>Email: contacto@dr-rodrigoleon-ortopedista.com</p>
       </div>
       <div className="footer__social">
         <h3>Redes Sociales</h3>
