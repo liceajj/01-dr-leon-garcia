@@ -1,7 +1,5 @@
-/* src/styles/Contacto.css */
-
 .contacto-container {
-    padding-top: 60px; /* Añadir espacio para que la información esté debajo del header */
+    padding-top: 60px; 
     display: flex;
     flex-direction: column;
     align-items: center;

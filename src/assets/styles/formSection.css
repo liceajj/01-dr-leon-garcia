@@ -1,6 +1,3 @@
-/* src/styles/FormSection.css */
-
-/* Definir keyframes para la animación de entrada desde la izquierda */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -18,7 +15,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.388);
   margin-top: 20px;
-  /* Aplicar la animación al cargar */
   animation: slideInFromLeft 0.8s ease-out;
 }
 

@@ -1,5 +1,3 @@
-/* src/styles/gallery.css */
-
 .photo-gallery {
   padding: 4rem 2rem;
   background-color: #f0f0f0;
@@ -14,15 +12,15 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Ajusta las columnas */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
   gap: 1rem;
   justify-content: center;
 }
 
 .gallery-item {
   position: relative;
-  width: 320px;  /* Tamaño ajustado */
-  height: 220px; /* Tamaño ajustado */
+  width: 320px;  
+  height: 220px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -59,47 +57,47 @@
 
 .text {
   font-size: 30px;
-  white-space: normal; /* Asegura que el texto no se corte */
+  white-space: normal; 
 }
 
-/* Responsividad */
+
 @media (max-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta las columnas para pantallas medianas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   }
 
   .gallery-item {
-    width: 280px;  /* Ajusta el tamaño para pantallas medianas */
-    height: 200px; /* Mantiene proporción */
+    width: 280px;  
+    height: 200px; 
   }
 }
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Permite mayor tamaño en pantallas pequeñas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   }
 
   .gallery-item {
-    width: 250px;  /* Se aumenta el tamaño en pantallas pequeñas */
-    height: 180px; /* Mantiene proporción */
+    width: 250px;  
+    height: 180px; 
   }
 
   .text {
-    font-size: 25px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    font-size: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta columnas en móviles */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .gallery-item {
-    width: 220px;  /* Se ajusta el tamaño en móviles */
-    height: 160px; /* Mantiene proporción */
+    width: 220px; 
+    height: 160px;
   }
 
   .text {
-    font-size: 22px; /* Ajusta el tamaño del texto en móviles */
+    font-size: 22px; 
   }
 }

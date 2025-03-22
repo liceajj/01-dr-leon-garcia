@@ -1,5 +1,3 @@
-/* src/styles/traumatologia.css */
-
 html, body {
   height: 100%;
   margin: 0;
@@ -9,7 +7,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la pantalla */
+  min-height: 100vh; 
 }
 
 .traumatologia-page {
@@ -19,7 +17,7 @@ body {
 }
 
 .traumatologia-container {
-  flex: 1; /* Asegura que el contenido principal ocupe todo el espacio disponible */
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
@@ -30,24 +28,23 @@ body {
   padding: 2rem;
   justify-content: space-between;
   flex: 1;
-  max-width: 100%; /* Asegura que el contenido no se desborde */
-  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  max-width: 100%;
+  box-sizing: border-box; 
 }
 
 .left-section-trauma {
   flex: 0 0 70%;
-  max-width: 70%; /* Asegura que la sección izquierda no se desborde */
+  max-width: 70%; 
   font-size: 20px;
 
 }
 
 .right-section-trauma {
   flex: 0 0 30%;
-  max-width: 30%; /* Asegura que la sección derecha no se desborde */
+  max-width: 30%;
   padding-left: 2rem;
 }
 
-/* .info-section h3, .info-section p estilos ya están en InfoSection.css, por lo que pueden ser eliminados de aquí */
 
 .about-us, .services-list {
   background-color: #f9f9f9;
@@ -55,8 +52,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  max-width: 100%; /* Asegura que no se desborden */
-  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  max-width: 100%;
+  box-sizing: border-box; 
   font-size: 20px;
 }
 
@@ -66,11 +63,10 @@ body {
 }
 
 .services-list li {
-  margin-bottom: 10px; /* Margin entre los elementos de la lista */
+  margin-bottom: 10px; 
   font-size: 20px;
 }
 
-/* .form-section, .form-section h2, .form-group, .form-group label, .form-group input, .form-group textarea, .form-group button, .form-group button svg estilos ya están en FormSection.css, por lo que pueden ser eliminados de aquí */
 
 .footer {
   position: relative;
@@ -81,7 +77,7 @@ body {
 @media (max-width: 768px) {
   .content-trauma {
     flex-direction: column;
-    padding: 1rem; /* Ajustar el padding en pantallas pequeñas */
+    padding: 1rem; 
   }
 
   .right-section-trauma {
@@ -90,11 +86,11 @@ body {
 
   .left-section-trauma, .right-section-trauma {
     flex: 1;
-    max-width: 100%; /* Asegura que no se desborden en pantallas pequeñas */
+    max-width: 100%; 
   }
 }
 
 .traumatologia-container img {
-  max-width: 75%; /* Reduce el tamaño de las imágenes al 75% */
+  max-width: 75%;
   height: auto;
 }

@@ -1,9 +1,10 @@
 import Modal from 'react-modal';
 import '../styles/EmergencyModal.css';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-// Importante: se debe llamar a Modal.setAppElement() en algún lugar de tu app (por ejemplo, en el index.js)
-// Modal.setAppElement('#root');
+
+
 
 function EmergencyModal({ isOpen, closeModal }) {
   const [formData, setFormData] = useState({
@@ -32,7 +33,7 @@ function EmergencyModal({ isOpen, closeModal }) {
       onRequestClose={closeModal}
       className="Modal"
       overlayClassName="Overlay"
-      closeTimeoutMS={300} // Ajusta este valor según la duración de tu animación
+      closeTimeoutMS={300}
     >
       <div className="modal__content" data-blendy-to="emergencyModal">
         <div className="modal__header">
@@ -71,4 +72,11 @@ function EmergencyModal({ isOpen, closeModal }) {
   );
 }
 
+EmergencyModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired,
+};
+
 export default EmergencyModal;
+
+

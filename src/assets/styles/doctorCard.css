@@ -1,14 +1,12 @@
-/* src/styles/DoctorCard.css */
-
 .doctor-card {
     display: flex;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 20px auto; /* Centramos horizontalmente con margen automático */
-    width: 80%; /* Reduce el ancho de la card */
-    max-width: 800px; /* Ancho máximo de la card */
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 800px; 
   }
   
   .doctor-left {
@@ -37,7 +35,7 @@
   }
   
   .doctor-right {
-    flex: 1.5; /* Ajusta el tamaño de la parte derecha */
+    flex: 1.5; 
     padding: 20px;
   }
   
@@ -66,12 +64,12 @@
   
   .menu-button {
     width: 90%;
-    background-color: #00264D; /* Color del botón */
+    background-color: #00264D; 
     border: none;
     padding: 17px 20px;
-    margin-bottom: 10px; /* Espacio entre elementos */
-    font-size: 20px; /* Reduce el tamaño de la fuente */
-    color: #FFFFFF; /* Color del texto */
+    margin-bottom: 10px; 
+    font-size: 20px; 
+    color: #FFFFFF; 
     text-align: left;
     cursor: pointer;
     outline: none;
@@ -83,13 +81,13 @@
   }
   
   .menu-button:hover {
-    background-color: #FFFFFF; /* Fondo blanco en hover */
-    color: #00264D; /* Texto del color del botón en hover */
+    background-color: #FFFFFF; 
+    color: #00264D;
     border-left: 2px;
   }
   
   .menu-button.selected {
-    border-left: 5px solid #00264D; /* Borde izquierdo al seleccionar */
+    border-left: 5px solid #00264D; 
   }
   
   .menu-content {
@@ -99,7 +97,7 @@
   }
   
   .arrow {
-    transition: transform 0.5s ease; /* Transición más lenta para el icono */
+    transition: transform 0.5s ease; 
   }
   
   @keyframes slide-down {
@@ -108,56 +106,52 @@
       opacity: 0;
     }
     to {
-      max-height: 1000px; /* Ajusta según sea necesario */
+      max-height: 1000px; 
       opacity: 1;
     }
   }
-  /* CSS para Doctor Card */
-
-/* ... estilos existentes ... */
-
-/* Responsividad para Doctor Card */
+ 
 @media (max-width: 768px) {
   .doctor-card {
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
 
   .doctor-left {
-    order: 2; /* La imagen se mostrará después del nombre */
-    padding: 10px 0; /* Reduce el padding para dispositivos móviles */
+    order: 2;
+    padding: 10px 0
   }
 
   .doctor-right {
-    order: 1; /* El nombre se mostrará primero */
+    order: 1; 
     padding: 10px;
   }
 
   .doctor-right h2 {
-    margin-bottom: 10px; /* Espacio debajo del nombre */
+    margin-bottom: 10px;
   }
 
   .menu {
-    order: 3; /* Los botones se mostrarán al final */
+    order: 3; 
     border-top: 1px solid #e0e0e0;
     padding-top: 10px;
-    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    width: 100%;
   }
 
   .menu-button {
-    width: 100%; /* Botones ocupan todo el ancho */
+    width: 100%; 
     font-size: 14px;
-    padding: 12px 10px; /* Ajusta padding para dispositivos móviles */
+    padding: 12px 10px; 
   }
 
   .menu-button.selected {
-    border-left: none; /* Quita el borde izquierdo en dispositivos móviles */
-    border-top: 3px solid #00264D; /* Borde superior al seleccionar */
+    border-left: none; 
+    border-top: 3px solid #00264D;
   }
 
   .menu-content {
-    padding-left: 0; /* Alinea contenido a la izquierda */
+    padding-left: 0; 
   }
 }
 

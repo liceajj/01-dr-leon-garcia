@@ -1,20 +1,17 @@
-/* src/styles/appointment.css */
-/* src/styles/appointment.css */
-
 .appointment {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 600px; /* Aumentar la altura de la imagen */
+  height: 600px; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  width: 100%; /* Asegura que el componente ocupe el ancho completo */
-  margin: 0 auto; /* Centrar el componente horizontalmente */
-  padding: 20px; /* Añadir padding para evitar que el contenido se salga */
-  box-sizing: border-box; /* Incluir padding en el ancho total */
+  width: 100%;
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -23,37 +20,37 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 50, 0.5); /* Capa de color azul degradado */
+  background: rgba(0, 0, 50, 0.5); 
   display: flex;
-  align-items: center; /* Centrar verticalmente */
-  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; 
+  justify-content: center; 
 }
 
 .appointment__content {
   position: relative;
   z-index: 1;
-  max-width: 90%; /* Ajustar el ancho máximo del contenido */
-  margin: 0 auto; /* Centrar el contenido */
-  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+  max-width: 90%; 
+  margin: 0 auto; 
+  overflow-wrap: break-word; 
 }
 
 .appointment__content h2 {
-  font-size: 56px; /* Aumentar el tamaño de la fuente */
+  font-size: 56px; 
   margin-bottom: 1rem;
-  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+  overflow-wrap: break-word;
 }
 
 .appointment__content p {
-  font-size: 20px; /* Aumentar el tamaño de la fuente */
+  font-size: 20px; 
   margin-bottom: 2rem;
-  overflow-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+  overflow-wrap: break-word; 
 }
 
 .appointment__buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que los botones se envuelvan */
+  flex-wrap: wrap; 
 }
 
 .appointment__button {
@@ -61,14 +58,14 @@
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  font-size: 20px; /* Aumentar el tamaño de la fuente */
+  font-size: 20px; 
   border-radius: 5px;
   color: white;
   text-decoration: none;
   transition: background 0.3s;
-  min-width: 150px; /* Establece un ancho mínimo para los botones */
-  flex: 1; /* Permite que los botones se ajusten */
-  max-width: 200px; /* Establece un ancho máximo para los botones */
+  min-width: 150px; 
+  flex: 1; 
+  max-width: 200px;
 }
 
 .phone-button {
@@ -89,19 +86,19 @@
 
 .button-icon {
   margin-right: 10px;
-  font-size: 1.5rem; /* Aumentar el tamaño del icono */
+  font-size: 1.5rem; 
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
   .appointment__buttons {
-    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-    gap: 10px; /* Ajusta el espacio entre los botones en pantallas pequeñas */
+    flex-direction: column;
+    gap: 10px; 
   }
 
   .appointment__button {
-    max-width: none; /* Elimina el ancho máximo en pantallas pequeñas */
-    width: calc(100% - 20px); /* Ajusta el ancho para evitar desbordamientos */
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+    max-width: none; 
+    width: calc(100% - 20px);
+    box-sizing: border-box; 
   }
 }

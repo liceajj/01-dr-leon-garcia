@@ -1,4 +1,6 @@
 import '../styles/headerSection.css';
+import PropTypes from 'prop-types';
+
 
 const HeaderSection = ({ backgroundImage, title }) => {
   return (
@@ -9,5 +11,11 @@ const HeaderSection = ({ backgroundImage, title }) => {
     </section>
   );
 };
+
+HeaderSection.propTypes = {
+  backgroundImage: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+};
+
 
 export default HeaderSection;

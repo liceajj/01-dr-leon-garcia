@@ -1,4 +1,4 @@
-@import '../styles/FloatingButtons.css'; /* Importa los estilos de FloatingButtons */
+@import '../styles/FloatingButtons.css'; 
 
 
 .blog-section {
@@ -25,13 +25,13 @@
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
-  width: 400px; /* Hace las tarjetas más anchas */
+  width: 400px;
   transition: border 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 600px; /* Asegura que todas las tarjetas tengan una altura mínima */
+  min-height: 600px; 
 }
 
 .blog-card:hover {
@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: space-between; /* Asegura que los botones estén en la parte inferior */
+  justify-content: space-between; 
 }
 
 .card-title {
@@ -85,11 +85,11 @@
 
 .contact-buttons {
   display: flex;
-  justify-content: space-between; /* Espacio entre botones */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
-  gap: 10px; /* Añadir margen entre los botones */
-  margin-top: auto; /* Empuja los botones hacia el fondo */
+  gap: 10px; 
+  margin-top: auto;
 }
 
 .card-button, .common-button {
@@ -103,9 +103,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48%; /* Asegura que todos los botones tengan el mismo tamaño */
+  width: 48%; 
   text-align: center;
-  box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+  box-sizing: border-box; 
 }
 
 .card-button:hover, .common-button:hover {
@@ -134,7 +134,7 @@
 
   .contact-buttons {
     flex-direction: column;
-    gap: 10px; /* Añadir margen entre los botones */
+    gap: 10px;
   }
 
   .card-button, .common-button {

@@ -5,7 +5,7 @@ import App from './App.jsx'
 import Modal from 'react-modal'; 
 
 
-Modal.setAppElement('#root'); // Configura el elemento raíz de la app
+Modal.setAppElement('#root'); 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -1,5 +1,3 @@
-/* src/styles/footer.css */
-
 .footer {
   background-color: #00264D;
   color: #FFFFFF;
@@ -8,8 +6,8 @@
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  box-sizing: border-box; /* Incluir padding en el ancho total */
-  max-width: 100%; /* Asegura que el footer no se desborde */
+  box-sizing: border-box; 
+  max-width: 100%; 
 }
 
 .footer__location,
@@ -19,9 +17,9 @@
   min-width: 200px;
   margin: 20px;
   font-size: 20px;
-  overflow: hidden; /* Evitar el desbordamiento */
-  text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto se desborda */
-  word-wrap: break-word; /* Asegurar que el texto se ajuste al ancho */
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  word-wrap: break-word; 
 }
 
 .footer h3 {
@@ -47,7 +45,8 @@
   color: #00508C;
 }
 
-/* Media Queries para Responsividad */
+
+
 @media (max-width: 1024px) {
   .footer {
     flex-direction: column;
@@ -58,10 +57,10 @@
   .footer__location,
   .footer__contact,
   .footer__social {
-    min-width: 100%; /* Asegura que cada sección ocupe el ancho completo */
+    min-width: 100%; 
     margin: 10px 0;
-    max-width: 95%; /* Ajustar el ancho máximo para evitar desbordamientos */
-    box-sizing: border-box; /* Incluir padding en el ancho total */
+    max-width: 95%; 
+    box-sizing: border-box; 
   }
 
   .footer__social-icons {
@@ -73,6 +72,6 @@
   .footer__location,
   .footer__contact,
   .footer__social {
-    max-width: 90%; /* Ajustar el ancho máximo para evitar desbordamientos */
+    max-width: 90%; 
   }
 }

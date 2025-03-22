@@ -1,4 +1,6 @@
 import '../styles/infoService.css';
+import PropTypes from 'prop-types';
+
 
 const InfoService = ({ title, description, image }) => {
   const phoneNumber = "525535176177"; 
@@ -23,5 +25,13 @@ const InfoService = ({ title, description, image }) => {
     </div>
   );
 };
+
+InfoService.propTypes = {
+  description: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  image: PropTypes.string.isRequired, 
+
+};
+
 
 export default InfoService;
