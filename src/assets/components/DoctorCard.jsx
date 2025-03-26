@@ -84,7 +84,7 @@ const DoctorCard = () => {
       <div className="doctor-right">
         <h2>Dr. Rodrigo León García</h2>
         <h3>Especialidad en [Traumatología y Ortopedia, Cirugía Artroscópica]</h3>
-        <p>Cédula Profesional: 12338223</p>
+        <p>Cédula Profesional: 14821370</p>
         <div className="menu">
           {sections.map((section) => (
             <div key={section.title}>
